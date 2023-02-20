@@ -1,0 +1,23 @@
+{
+  "name": "@elemnt/cem-plugin-angular",
+  "version": "0.1.7",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "dependencies": {
+    "mkdirp": "^2.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.2",
+    "prettier": "^2.8.0",
+    "@types/node": "^16.0.0"
+  }
+}

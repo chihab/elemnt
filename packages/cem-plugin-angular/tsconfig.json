@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "lib": ["es2020"],
+    "types": ["node"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist"
+  }
+}

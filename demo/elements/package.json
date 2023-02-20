@@ -1,0 +1,28 @@
+{
+  "name": "@demo/elements",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf ../ng-lib/src/generated",
+    "build": "tsc && npm run analyze",
+    "postbuild": "npm run analyze",
+    "start": "tsc --watch",
+    "analyze": "cem analyze"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./button.js": "./dist/Button.js",
+    "./text.js": "./dist/Text.js"
+  },
+  "dependencies": {
+    "lit": "^2.6.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.8",
+    "@elemnt/cem-plugin-angular": "*",
+    "typescript": "~4.8.2",
+    "tslib": "^2.5.0"
+  }
+}

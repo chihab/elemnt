@@ -1,0 +1,12 @@
+{
+  "name": "@elemnt/root",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm exec nx run-many --target=build"
+  },
+  "devDependencies": {
+    "nx": "15.8.5"
+  }
+}

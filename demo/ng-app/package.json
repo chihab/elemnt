@@ -1,0 +1,27 @@
+{
+  "name": "@demo/ng-app",
+  "private": true,
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/common": "^15.0.1",
+    "@angular/compiler": "^15.0.1",
+    "@angular/core": "^15.0.1",
+    "@angular/forms": "^15.0.1",
+    "@angular/platform-browser": "^15.0.1",
+    "rxjs": "~7.5.1",
+    "tslib": "^2.4.0",
+    "zone.js": "~0.11.4",
+    "@demo/ng-lib": "*"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^15.0.1",
+    "@angular/cli": "^15.0.1",
+    "@angular/compiler-cli": "^15.0.1",
+    "typescript": "~4.8.2"
+  }
+}

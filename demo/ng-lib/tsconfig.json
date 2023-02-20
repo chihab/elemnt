@@ -1,0 +1,19 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "dist/",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2020",
+  },
+  "exclude": [
+    "dist/",
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}

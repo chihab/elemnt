@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "dist/Button.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Button",
+          "default": "class Button extends LitElement {\n    constructor() {\n        super(...arguments);\n        this.text = '';\n    }\n    render() {\n        return html `<button>${this.text}</button>`;\n    }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "dist/Button.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/Text.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Text",
+          "default": "class Text extends LitElement {\n    constructor() {\n        super(...arguments);\n        this.value = '';\n    }\n    render() {\n        return html `Text: <input @input=${this.onInput} .value=\"${this.value}\"/>`;\n    }\n    onInput(event) {\n        this.value = event.target.value;\n    }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Text",
+          "declaration": {
+            "name": "Text",
+            "module": "dist/Text.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Button"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Text"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/Button.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Button",
+          "members": [
+            {
+              "kind": "field",
+              "name": "text",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "method",
+              "name": "render",
+              "privacy": "protected"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "src/Button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/Text.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Text",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "method",
+              "name": "render",
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "onInput",
+              "privacy": "protected",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Text",
+          "declaration": {
+            "name": "Text",
+            "module": "src/Text.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Button"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Text"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/Button.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Button",
+          "default": "class Button extends LitElement {\n    constructor() {\n        super(...arguments);\n        this.text = '';\n    }\n    render() {\n        return html `<button>${this.text}</button>`;\n    }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Button",
+          "declaration": {
+            "name": "Button",
+            "module": "dist/src/Button.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/Text.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Text",
+          "default": "class Text extends LitElement {\n    constructor() {\n        super(...arguments);\n        this.value = '';\n    }\n    render() {\n        return html `Text: <input @input=${this.onInput} .value=\"${this.value}\"/>`;\n    }\n    onInput(event) {\n        this.value = event.target.value;\n    }\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Text",
+          "declaration": {
+            "name": "Text",
+            "module": "dist/src/Text.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Button"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./Text"
+          }
+        }
+      ]
+    }
+  ]
+}
