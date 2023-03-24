@@ -300,16 +300,18 @@ import angular from 'cem-plugin-angular';
 export default {
   plugins: [
     angular({
-        /** Directory to write the Angular wrappers to, defaults to `legacy` */
+        /** Directory to write the Angular wrappers */
         outDir: './angular',
-        /** Array of classNames to exclude */
+        /** Array of component class names to exclude */
         exclude: ['MyElement']
         /** Whether to generate a Standalone component for each component, defaults to `true` */
         standalone: true,
-        /** Whether to generate a NgModule for each component, defaults to `true` */
+        /** Whether to generate a NgModule for each component, defaults to `false` */
         ngModule: false,
+        /** Whether to register the custom element, defaults to `false` */
+        register: true,        
         /** which components should be integrated with ngModel. 
-         * It lets you set what the target prop is (i.e. value), which event will cause the target prop to change, and more. */
+         * It lets you set what the target prop is (i.e. value), which event will cause the target prop to change */
         accessors: [{
             event: "input",
             prop: "value",
