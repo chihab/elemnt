@@ -300,7 +300,7 @@ import angular from 'cem-plugin-angular';
 export default {
   plugins: [
     angular({
-        /** Directory to write the React wrappers to, defaults to `legacy` */
+        /** Directory to write the Angular wrappers to, defaults to `legacy` */
         outDir: './angular',
         /** Array of classNames to exclude */
         exclude: ['MyElement']
